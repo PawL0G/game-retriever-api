@@ -21,12 +21,14 @@ class Casino_Widget extends WP_Widget
         parent::__construct(
             'cls_wdg_pavlo', 'Top 3 Games', $options,
             $this->defaults = array(
-                'title'  => '',
-                'game_id' => 'id',
-                'images' => array(
-                    'rectangle' => array(
-                        'width' => '',
-                        'url' => ''
+                'games' => array(
+                    'name'  => '',
+                    'id' => 'id',
+                    'images' => array(
+                        'rectangle' => array(
+                            'width' => '',
+                            'url' => ''
+                        ),
                     ),
                 ),
             )
